@@ -26,19 +26,19 @@ public class Main {
             System.out.println("Пора обновить телефон");
         }
         //Задача 3
-        int year = 1956;
+        int year = 2020;
         if (year > 1584) {
             if (year % 400 == 0) {
                 System.out.println(year + " год является високосным");
             } else if (year % 100 == 0) {
-                System.out.println(year + " год не является високосным или ещё не введён");
+                System.out.println(year + " год не является високосным");
             } else if (year % 4 == 0) {
                 System.out.println(year + " год является високосным");
             } else {
-                System.out.println(year + " год не является високосным или ещё не введён");
+                System.out.println(year + " год не является високосным");
             }
         } else {
-            System.out.println(year + " год! не является високосным или ещё не введён");
+            System.out.println("Високосный год ещё не введён. Проверьте корректность года");
         }
         //Задача 4
         int deliveryDistance = 95;
