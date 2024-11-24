@@ -26,18 +26,20 @@ public class Main {
             System.out.println("Пора обновить телефон");
         }
         //Задача 3
-        int year = 2021;
-
-        if (year % 400 == 0 && year > 1584) {
-            System.out.println(year + " год является високосным");
-        } else if (year % 100 == 0 && year > 1584) {
-            System.out.println(year + " год является високосным");
-        } else if (year % 4 == 0 && year > 1584) {
-            System.out.println(year + " год является високосным");
+        int year = 1956;
+        if (year > 1584) {
+            if (year % 400 == 0) {
+                System.out.println(year + " год является високосным");
+            } else if (year % 100 == 0) {
+                System.out.println(year + " год не является високосным или ещё не введён");
+            } else if (year % 4 == 0) {
+                System.out.println(year + " год является високосным");
+            } else {
+                System.out.println(year + " год не является високосным или ещё не введён");
+            }
         } else {
-            System.out.println(year + " год не является високосным или ещё не введён");
+            System.out.println(year + " год! не является високосным или ещё не введён");
         }
-
         //Задача 4
         int deliveryDistance = 95;
         int deliveryDay = 1;
@@ -56,16 +58,16 @@ public class Main {
         //Задача 5
         int monthNumber = 11;
         switch (monthNumber) {
-            case 12,1,2:
+            case 12, 1, 2:
                 System.out.println("Месяц принадлежит сезону - Зима");
                 break;
-            case 3,4,5:
+            case 3, 4, 5:
                 System.out.println("Месяц принадлежит сезону - Весна");
                 break;
-            case 6,7,8:
+            case 6, 7, 8:
                 System.out.println("Месяц принадлежит сезону - Лето");
                 break;
-            case 9,10,11:
+            case 9, 10, 11:
                 System.out.println("Месяц принадлежит сезону - Осень");
                 break;
             default:
