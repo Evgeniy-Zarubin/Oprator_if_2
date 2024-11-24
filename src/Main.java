@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         //Задача 1
@@ -26,7 +27,9 @@ public class Main {
             System.out.println("Пора обновить телефон");
         }
         //Задача 3
-        int year = 2020;
+        Scanner console = new Scanner(System.in);
+        System.out.printf("Введите год:");
+        int year = console.nextInt();
         if (year > 1584) {
             if (year % 400 == 0) {
                 System.out.println(year + " год является високосным");
